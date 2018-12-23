@@ -1,0 +1,15 @@
+@import "../../../assets/styles/colors";
+
+.ProductCell {
+  margin: 4px;
+  text-align: center;
+  .cell-text {
+    background-color: $light-gray;
+    font-family: "Raleway";
+  }
+  .cell-text-max {
+    background-color: $blue;
+    color: $white;
+    font-family: "Raleway";
+  }
+}

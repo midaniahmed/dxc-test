@@ -1,0 +1,58 @@
+@import '../../../assets/styles/_colors';
+
+.MainLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  .header-container {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    .header{
+      height: 60px;
+      background: $blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .flex-1 {
+        flex: 1;
+      }
+      .header-text {
+        text-transform: uppercase;
+        color:  $white;
+        font-size: 18px;
+      }
+    }
+  }
+  .main-container {
+    flex: 1 0 auto;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+    .content{
+      flex: 1 0 auto;
+      position: fixed;
+      overflow: auto;
+      width: 100%;
+    }
+  }
+  .footer-container {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    z-index: 3;
+    .footer{
+      height: 60px;
+      background: $blue;
+      background: $blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .footer-text {
+        color:  $white;
+        font-size: 16px;
+      }
+    }
+  }
+}

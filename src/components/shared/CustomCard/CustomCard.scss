@@ -1,0 +1,33 @@
+@import "../../../assets/styles/colors";
+.CustomCard {
+  width: 500px;
+  .card-body {
+    position: relative;
+    border: 1px solid $gray;
+    background-color: $white;
+    padding: 1.25rem;
+    background-clip: border-box;
+    border-radius: .25rem;
+  }
+  .divider {
+    border: 1px solid $light-gray;
+    border-bottom: none;
+  }
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: $gray;
+    margin-bottom: 0;
+  }
+  .card-date {
+    font-size: 14px;
+    font-weight: 300;
+    color: $gray;
+  }
+}
+
+@media (max-width: 600px) {
+  .CustomCard {
+    width: 100%;
+  }
+}
